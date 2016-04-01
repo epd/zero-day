@@ -1,0 +1,59 @@
+.widget-holder {
+	text-align: center;	
+}
+.years-to-live {
+	font-size: 72px;
+}
+.years-to-live span {
+
+}
+.buttons-holder {
+
+}
+.buttons-holder ul {
+
+}
+li.factors-tabs {
+
+}
+li.factors-tabs .title {
+
+}
+li.factors-tabs .value {
+
+}
+.the-graph {
+
+}
+
+.keys {
+
+}
+.keys ul {
+
+}
+.key-factor {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* :before {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 1px;
+	background-color: red;
+}

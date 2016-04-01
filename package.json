@@ -1,0 +1,27 @@
+{
+  "name": "zero-day",
+  "version": "1.0.0",
+  "description": "Nothing like the security vulnerability. Its just a new way of looking at you finances from the perspective of time. How many yrs/months/days I have to \"live\".  basically it calculates your runway",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify src/js/app.js > bundle.js",
+    "dev": "watchify src/js/app.js -o bundle.js -v",
+    "server": "static-server"
+  },
+  "author": "Uri Maxima",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.3",
+    "angular-animate": "^1.5.3",
+    "angular-aria": "^1.5.3",
+    "angular-material": "^1.0.6",
+    "angular-messages": "^1.5.3",
+    "normalize.css": "^4.0.0"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "static-server": "^2.0.2",
+    "watchify": "^3.7.0"
+  }
+}
