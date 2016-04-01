@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify src/js/app.js > bundle.js",
-    "dev": "watchify src/js/app.js -o bundle.js -v",
-    "server": "static-server"
+    "build": "browserify src/js/app.js > src/bundle.js",
+    "watch": "watchify src/js/app.js -o src/bundle.js -v",
+    "dev": "parallelshell 'npm run watch' 'npm run server'",
+    "server": "static-server -i src/index.html -p 3000"
   },
   "author": "Uri Maxima",
   "license": "ISC",
@@ -21,6 +22,7 @@
   },
   "devDependencies": {
     "browserify": "^13.0.0",
+    "parallelshell": "^2.0.0",
     "static-server": "^2.0.2",
     "watchify": "^3.7.0"
   }
